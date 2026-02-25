@@ -1,0 +1,58 @@
+.body {
+  background-color: #121212;
+  color: #EAEAEA;
+  font-family: 'DM Mono', monospace;
+  cursor: url('custom-cursor.png'), auto;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFD700; /* Gold Accent */
+}
+
+/* Animated Grid Background */
+@keyframes gridAnimation {
+  0% { background-position: 0 0; }
+  100% { background-position: 100px 100px; }
+}
+
+.grid-background {
+  background-image: url('grid-pattern.png');
+  animation: gridAnimation 10s linear infinite;
+  position: relative;
+}
+
+/* Noise Texture Overlay */
+.noise-overlay {
+  background-image: url('noise-texture.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;700&display=swap');
+
+/* Section Styles */
+header {
+  background-color: #232323;
+  padding: 20px;
+}
+
+footer {
+  background-color: #232323;
+  padding: 10px;
+  text-align: center;
+}
+
+.section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #FFD700;
+  border-radius: 5px;
+}
